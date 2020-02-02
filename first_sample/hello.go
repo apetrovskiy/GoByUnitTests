@@ -4,7 +4,7 @@ import "fmt"
 
 const helloPrefix = "Hello, "
 
-func Hello(name string) string {
+func hello(name string) string {
 	if name == "" {
 		name = "World"
 	}
@@ -12,5 +12,5 @@ func Hello(name string) string {
 }
 
 func main() {
-	fmt.Println(Hello("world"))
+	fmt.Println(hello("world"))
 }
