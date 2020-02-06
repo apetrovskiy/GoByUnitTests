@@ -24,8 +24,11 @@ jobs:
             dep ensure
         fi
 
+    - name: Format
+      run: find . -type d -exec go fmt {} \;
+
     - name: Build
-      run: find . -type d -exec echo "go build -v ." \;
+      run: find . -type d -exec go build -v {} \;
     
     - name: Test
-      run: find . -type d -exec echo "go test" \;
+      run: find . -type d -exec go test {} \;
