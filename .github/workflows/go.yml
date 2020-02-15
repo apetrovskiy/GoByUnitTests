@@ -34,4 +34,4 @@ jobs:
       run: find . -type d -exec go build -v {} \;
     
     - name: Test
-      run: find . -type d -exec go test {} \;
+      run: find . -type d -exec go test {} -cover \;
