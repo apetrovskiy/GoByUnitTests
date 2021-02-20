@@ -1,9 +1,38 @@
 package secondsample
 
 import (
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
 	"reflect"
 	"testing"
 )
+
+var _ = Describe("Simple maths", func() {
+	var (
+		numbers01 []int
+		numbers02 []int
+	)
+
+	BeforeEach(func() {
+		numbers01 = []int{1, 2, 3, 4, 5}
+
+		numbers02 = []int{5}
+	})
+
+	Describe("Summarization", func() {
+		Context("Non-empty array", func() {
+			It("should be 15", func() {
+				Expect(Sum(numbers01)).To(Equal(15))
+			})
+		})
+
+		Context("Empty array", func() {
+			It("should be 0", func() {
+				Expect(Sum(numbers02)).To(Equal(0))
+			})
+		})
+	})
+})
 
 func TestSum(t *testing.T) {
 	numbers := []int{1, 2, 3, 4, 5}
