@@ -2,6 +2,7 @@ package fourth_sample
 
 import (
 	"fmt"
+
 	"github.com/cucumber/godog"
 )
 
