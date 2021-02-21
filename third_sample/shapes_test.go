@@ -1,4 +1,4 @@
-package thirdsample
+package third_sample
 
 import "testing"
 

@@ -1,4 +1,4 @@
-package sixthexample
+package sixth_example
 
 type WebsiteChecker func(string) bool
 type result struct {

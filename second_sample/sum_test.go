@@ -1,4 +1,4 @@
-package secondsample
+package second_sample
 
 import (
 	. "github.com/onsi/ginkgo"
@@ -7,7 +7,7 @@ import (
 	"testing"
 )
 
-var _ = Describe("Simple maths", func() {
+var _ = Describe("GoByUnitTests Suite", func() {
 	var (
 		numbers01 []int
 		numbers02 []int

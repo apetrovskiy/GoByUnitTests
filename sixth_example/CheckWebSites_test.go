@@ -1,4 +1,4 @@
-package sixthexample
+package sixth_example
 
 import (
 	"reflect"
