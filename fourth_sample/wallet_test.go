@@ -1,4 +1,4 @@
-package fourthsample
+package fourth_sample
 
 import (
 	"testing"

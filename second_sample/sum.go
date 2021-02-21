@@ -1,4 +1,4 @@
-package secondsample
+package second_sample
 
 func Sum(numbers []int) (sum int) {
 	for _, number := range numbers {
