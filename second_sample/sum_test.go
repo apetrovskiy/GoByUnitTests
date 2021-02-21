@@ -1,10 +1,11 @@
 package second_sample
 
 import (
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
 	"reflect"
 	"testing"
+
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
 )
 
 var _ = Describe("GoByUnitTests Suite", func() {
