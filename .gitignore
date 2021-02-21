@@ -16,3 +16,5 @@
 
 .fake
 .ionide
+.metals/metals.h2.db
+.metals/metals.log
