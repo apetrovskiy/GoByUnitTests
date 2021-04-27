@@ -18,6 +18,13 @@ jobs:
 
     - name: Get dependencies
       run: |
+
+        echo "GOPATH"
+        echo $GOPATH
+        echo "GOROOT"
+        echo $GOROOT
+
+
         go get -v -t -d ./...
         if [ -f Gopkg.toml ]; then
             curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
